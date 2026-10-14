@@ -25,3 +25,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Generated Bicep output
+infrastructure/main.json
