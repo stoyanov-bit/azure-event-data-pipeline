@@ -9,7 +9,8 @@ app = func.FunctionApp()
 @app.blob_trigger(
     arg_name="myblob",
     path="raw-data/{name}",
-    connection="AzureWebJobsStorage"
+    connection="AzureWebJobsStorage",
+    source="EventGrid"
 )
 def process_blob(myblob: func.InputStream):
     logging.info(

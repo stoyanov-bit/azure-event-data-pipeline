@@ -16,7 +16,7 @@ local.settings.json
 .azure/
 
 # IDE
-.vscode/
+
 .idea/
 
 # OS
